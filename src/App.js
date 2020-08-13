@@ -5,6 +5,8 @@ import Header from "./Header/Header";
 import HomePage from "./HomePage";
 import RandomCatImage from "./Cats/RandomCatImage";
 import "./App.css";
+import RandomDogImage from "./Dogs/RandomDogImage";
+import RandomCatFact from "./Cats/RandomCatFact";
 
 const MainContainer = styled.div`
   width: 500px;
@@ -14,15 +16,15 @@ const MainContainer = styled.div`
   display: flex;
 `;
 
-const emptyDiv = styled.div``;
-
 function App() {
   return (
     <MainContainer>
       <Header />
       <Router>
         <HomePage path="/" />
-        <RandomCatImage path="/randomCat" />
+        <RandomCatImage path="/randomCat"/>
+        <RandomDogImage path="/randomDog" />
+        <RandomCatFact path="/randomCatFact" />
       </Router>
     </MainContainer>
   );

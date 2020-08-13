@@ -11,14 +11,13 @@ const MainContainer = styled.nav`
   justify-content: space-between;
 `;
 
-const Title = styled.div``;
-
 function Header(props) {
   return (
     <MainContainer>
       <Link to="/">Home</Link>
       <Link to="/randomCat">Cat Picture</Link>
       <Link to="/randomDog"> Dog Picture</Link>
+      <Link to="/randomCatFact"> Cat Fact</Link>
     </MainContainer>
   );
 }
